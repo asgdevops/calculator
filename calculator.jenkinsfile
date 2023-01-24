@@ -4,7 +4,7 @@ pipeline {
     stage ("Checkout") {
       steps {
         git url: 'https://github.com/asgdevops/calculator.git'
-        branch: mains
+        branch: main
       }
     }
   }
