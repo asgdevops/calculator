@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent { label 'debian_worker_0' }
   stages {
     stage ("Checkout") {
       steps {
