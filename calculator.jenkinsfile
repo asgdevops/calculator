@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'debian_worker0' }
+  agent { label ('centos_worker0 || debian_worker0 || ubuntu_worker0') }
   stages {
     stage ("Checkout") {
       steps {
